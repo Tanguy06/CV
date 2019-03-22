@@ -1,0 +1,13 @@
+var database = [	
+{
+	"Prenom" : "Tanguy",
+	"Nom" : "Lelong",
+	"Age" : "18",
+	"Ddn" : "26 janvier 2001",
+	"Adresse" : "536 chemin de rabiac estagnol, 06600 Antibes",
+	"Mail" : "Tanguy.Lelong06@gmail.com",
+	"Telephone" : "0761605545",
+	"TelephoneFixe" : "0493331474",
+	"infos" : "Je suis un jeune developpeur dynamique et créatif. Contactez moi en cas de besoin.",
+
+}]

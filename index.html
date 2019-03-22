@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<title>Mon CV</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js"></script>
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet
+	"><link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<section class="banniere">
+		<div class="intro container">
+			<div class="sous-titre name">
+				{{idd}}
+			</div>
+			<h1>
+				Developpeur
+				<span>Web</span>
+			</h1>
+			<p id="presentation">{{infos}}</p>	
+			<!-- icones reseaux sociaux -->
+			<div class="icons flex-center">
+				<i class="fab fa-github fa-3x icon-3d"></i>
+				<i class="fab fa-linkedin-in fa-3x icon-3d"></i>
+				<i class="fab fa-codepen fa-3x icon-3d"></i>	
+			</div>
+		</div>
+	</section>
+	<!-- nav bar -->
+	<nav id="navbar" class="navbar navbar-light light-blue lighten-4">
+		<a class="navbar-brand name2" href="#">{{idd}}</a>
+		<button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="dark-blue-text">
+				<i class="fas fa-bars fa-1x"></i>
+			</span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent1">
+			<ul class="navbar-nav mr-auto">
+      			<li class="nav-item active">
+        			<a class="nav-link" href="#top">Accueil <span class="sr-only">(current)</span></a>
+      			</li>
+      			<li class="nav-item">
+        			<a class="nav-link" href="#aProp">A propos</a>
+      			</li>
+      			<li class="nav-item">
+        			<a class="nav-link" href="#etudes">Etudes</a>
+      			</li>
+      			<li class="nav-item">
+        			<a class="nav-link" href="#exp">Expériences</a>
+      			</li>
+      			<li class="nav-item">
+        			<a class="nav-link" href="#comp">Compétences</a>
+      			</li>
+      			<li class="nav-item">
+        			<a class="nav-link" href="#">Diplômes</a>
+      			</li>
+    		</ul>
+  		</div>
+	</nav>
+
+	<div class="container">
+
+		<h1 id="aProp" class="text-center top">A PROPOS</h1>
+		<hr class="mb-5">
+		<div class="card">
+    		<img class="card-img-top" src="..." alt="Ma gueule">
+    		<div class="card-body">
+      			<p class="card-text name3"><b>Nom:</b> {{idd}}</p>
+      			<hr>
+      			<p class="card-text age"><b>Date de naissance:</b> {{ddn}}</p>
+      			<hr>
+      			<p class="card-text adresse"><b>Adresse:</b> {{adresse}}</p>
+      			<hr>
+      			<p class="card-text Telephone"><b>Telephone:</b> {{tel}}</p>
+      			<hr>
+      			<p class="card-text TelephoneF"><b>Telephone fixe:</b> {{telF}}</p>
+      			<hr>
+      			<p class="card-text Mail"><b>Email:</b> {{mail}}</p>
+    		</div>
+  		</div>
+  		<h3 class="text-center top1 mt-5">Ce que je recherche</h3>
+  		<hr class="mb-5">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque consequuntur, enim quae ea eum alias velit adipisci recusandae, doloremque nemo laboriosam sint temporibus placeat ad minima reiciendis quos natus rerum.</p>	
+  		<img src="code.jpg" class="img-fluid mt-5	" alt="image de code">
+  		<h1 id="etudes" class="text-center top">ETUDES</h1>
+  		<hr class="mb-5">
+
+  		<div class="row">
+		<div class="col-md-6 offset-md-3">
+			<ul class="timeline">
+				<li>
+					<span>Formation simplon.co</span>
+					<span class="float-right">Janvier 2019</span>
+					<hr>
+					<p>Fusce ullamcorper ligula sit amet quam accumsan aliquet. Sed nulla odio, tincidunt vitae nunc vitae, mollis pharetra velit. Sed nec tempor nibh...</p>
+				</li>
+				<li>
+					<span>Université-nice sophia Antipolis</span>
+					<span class="float-right">Septembre 2018</span>
+					<hr>
+					<p>Fusce ullamcorper ligula sit amet quam accumsan aliquet. Sed nulla odio, tincidunt vitae nunc vitae, mollis pharetra velit. Sed nec tempor nibh...</p>
+				</li>
+				<li>
+					<span>Bac STI2D</span>
+					<span class="float-right">Juin, 2018</span>
+					<hr>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula....</p>
+				</li>
+				<li>
+					<span>Brevet des collèges</span>
+					<span class="float-right">2015</span>
+					<hr>
+					<p>Curabitur purus sem, malesuada eu luctus eget, suscipit sed turpis. Nam pellentesque felis vitae justo accumsan, sed semper nisi sollicitudin...</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+		
+		<img src="livre.jpg" class="img-fluid mt-5" alt="image de livre ouvert">
+		<div>
+  		<h1 id="exp" class="text-center top">EXPERIENCES</h1>
+  		<hr class="mb-5">
+
+  	<div class="row">
+		<div class="col-md-6 offset-md-3">
+			<ul class="timeline2">
+				<li>
+					<span>Livreur, préparateur de commande</span>
+					<span class="float-right">Janvier 2019</span>
+					<hr>
+					<p>Fusce ullamcorper ligula sit amet quam accumsan aliquet. Sed nulla odio, tincidunt vitae nunc vitae, mollis pharetra velit. Sed nec tempor nibh...</p>
+				</li>
+				<li>
+					<span>Animateur GO BABY GYM</span>
+					<span class="float-right">Septembre 2018</span>
+					<hr>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula....</p>
+				</li>
+				<li>
+					<span>Opérateur manège</span>
+					<span class="float-right">Juin 2018</span>
+					<hr>
+					<p>Curabitur purus sem, malesuada eu luctus eget, suscipit sed turpis. Nam pellentesque felis vitae justo accumsan, sed semper nisi sollicitudin...</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+  		<h1 id="comp" class="text-center top">COMPETENCES</h1>
+  		<hr class="mb-5">
+	</div>
+
+	<script type="text/javascript" src="database.json"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+	
+</body>
+</html>
